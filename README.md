@@ -10,6 +10,7 @@ You must have your DB to mta game users - ``DB MTA``. Import [`/databases/GAME`]
 Write all your basic info to files: 
 
 [SITE](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/site)
+
 [GAME](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/server/mta_code_web_lua) (code_lua)
 
 ```

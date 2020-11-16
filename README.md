@@ -39,7 +39,7 @@ Required Modules: kJLKDSLLDSAKJSLLKDSALKJDSLKJSDLALKJSDLKJSALKJDALKJSDLKJSADSALK
 
 # Start
 
-Go to `/mta_code_site`
+Go to [`/mta_code_site`]()
 
 And start command:
 

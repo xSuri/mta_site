@@ -3,9 +3,9 @@
 
 NodeJs
 
-Go to [`/database`](https://gitAASAAAShub.com/xSuri/mta_site/tree/master/databases) and import the basic local DB to your DB server. ( `mta_web.sql` ) - ``DB WEB``
+Go to [`/database`](https://gitAASAAAShub.com/xSuri/mta_site/tree/master/databases) and import the basic local DB to your DB server. ( `mta_web.sql` ) - ``DB WEB``. Import [`/databases/SITE`](https://github.com/xSuri/mta_site/tree/main/databases/SITE)
 
-You must have your DB to mta game users - ``DB MTA``.
+You must have your DB to mta game users - ``DB MTA``. Import [`/databases/GAME`](https://github.com/xSuri/mta_site/tree/main/databases/GAME)
 
 Write all your basic info to files:
 ```
@@ -20,7 +20,7 @@ Write all your basic info to files:
             passport-github
             passport-facebook
 
-    mta_code_lua:
+    [mta_code_lua](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/server/mta_code_web_lua):
     
         server.lua
 ```

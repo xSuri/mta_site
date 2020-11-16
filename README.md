@@ -3,7 +3,7 @@
 
 NodeJs
 
-Go to [`/database`](https://gitAASAAAShub.com/xSuri/mta_site/tree/master/databases) and import the basic local DB to your DB server. ( `mta_web.sql` ) - ``DB WEB``. Import [`/databases/SITE`](https://github.com/xSuri/mta_site/tree/main/databases/SITE)
+Go to `/database` and import the basic local DB to your DB server. ( `mta_web.sql` ) - ``DB WEB``. Import [`/databases/SITE`](https://github.com/xSuri/mta_site/tree/main/databases/SITE)
 
 You must have your DB to mta game users - ``DB MTA``. Import [`/databases/GAME`](https://github.com/xSuri/mta_site/tree/main/databases/GAME)
 

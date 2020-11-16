@@ -1,0 +1,60 @@
+body
+{
+  margin-right: 10rem;
+  background-color: #252525;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+}
+
+h1
+{
+  color: #4de061;
+  position: relative;
+  left: 45vh;
+  top: 10vh;
+  font-size: 7.1vh;
+}
+
+main
+{
+  color: #4de061;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+  position: relative;
+  top: 35vh;
+  width: 40vh;
+  height: 35vh;
+  border: solid 5px #4de061;
+  padding: 10px;
+
+}
+
+
+img
+{
+    width: 14vh;
+    box-shadow: 0.7vh 0.7vh 0.5vh 0vh white;
+    margin-right: 3vh;
+    padding: 1.2vh;
+    position: relative;
+    bottom: 0.6vh;
+}
+
+img:hover
+{
+  box-shadow: 7px 7px 5px 0px #4de061;
+  transition: 0.2s;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.Icons
+{
+  height: 10rem;
+  display: block;
+}

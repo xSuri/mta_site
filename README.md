@@ -2,7 +2,7 @@
 
 # Basic work
 
-[![Watch the video]](https://youtu.be/GWm5nIZRac4)
+[![Watch the video](https://prnt.sc/vjwn7u)](https://youtu.be/GWm5nIZRac4)
 
 # Requirements
 

@@ -24,7 +24,7 @@ Write all your basic info to files:
 [GAME](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/server/mta_code_web_lua) (code_lua)
 
 ```
-    mta_code_site:
+    site:
 
         databases:
             db1 / db2
@@ -35,7 +35,7 @@ Write all your basic info to files:
             passport-github
             passport-facebook
 
-    mta_code_lua:
+    mta_code_web_lua:
     
         server.lua
 ```

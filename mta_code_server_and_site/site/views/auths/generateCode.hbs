@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generate Codes</title>
+        <link rel="stylesheet" href="/css/generatecode.css">
+
+    </head>
+
+    <body>
+
+        <form action="/newcode" method="POST">
+            
+            <p id="userId">Your User id: {{ userId }}</p>
+                        <br>
+            <h7 id="code">Code</h7>
+                
+            <main> 
+                    
+                <input name="serial" placeholder="Type your serial...">
+                <button type="submit">Submit</button>
+                
+            </main>
+            
+            <p id="alert"></p>
+
+        </form>
+
+    </body>
+
+    <script>
+    
+        var code = document.getElementById('code').innerText = "{{showCode}}"
+        var alert = document.getElementById('alert').innerText = "{{alert}}"
+
+    </script>
+
+</html>

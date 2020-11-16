@@ -1,0 +1,44 @@
+body
+{
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    top: 20rem;
+}
+
+.type
+{
+    justify-content: center;
+    align-self: center;
+    color: #4de061;
+    font-size: 3.3vh;
+    text-align: center;
+    
+}
+
+
+input
+{
+    font-size: 2.33vh;
+    background-color: #252525;
+    border-radius: 7px;
+    border: 2px solid white;
+    color: #4de061;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button
+{
+    font-size: 2.3vh;
+    border-radius: 7px;
+    border: 2px solid #4de061;
+    background-color: #252525;
+    color: white;
+}
+
+
+
+

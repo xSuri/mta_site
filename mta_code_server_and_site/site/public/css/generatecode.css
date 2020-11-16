@@ -1,0 +1,59 @@
+body
+{
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    position: relative;
+    top: 20vh;
+    background-color: #252525;
+    color: white;
+}
+
+
+form
+{
+    font-size: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    color: #4de061;
+}
+
+input
+{
+    font-size: 3.3vh;
+    border-radius: 15px;
+    border: solid 3.5px #4de061;
+    text-align: center;
+
+}
+
+button
+{
+    color: white;
+    background-color: #252525 ;
+    border: solid 2px #4de061;
+    font-size: 3.3vh;
+    border-radius: 15px;
+}
+
+button:hover
+{
+    font-size: 3.4vh;
+}
+
+p
+{
+    color: #4de061;
+    font-size: 4vh;
+    float: left;
+}
+
+h7#code
+{
+    font-size: 5vh;
+}
+
+main
+{
+    margin-top: 20px;
+
+}

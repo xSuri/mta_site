@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+            
+            <link rel="stylesheet" href="/css/profile.css">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> {{ title }} </title>
+
+        </head>
+
+        <body>
+            
+            <div class="logout">
+                <div class="circle"></div>
+                    <a href="http://localhost:3000/logout">Logout</a>
+            </div>
+            
+            <a class="mtaLink" href="">DATA</a>
+            <a class="data">DATA</a>
+
+            <hr>
+
+            <div id="profileInfo">
+                
+                {{!-- <p id="cars"></p> --}}
+
+                <p id="user_web_id"> Your Web User Id: {{ user_id }} </p>
+                <p id="rank"> {{rank}}</p>
+
+                <p id="user_name"> Name: {{ user_name }} </p>
+                <p id="health"> Health: {{ health }} </p>
+
+                <p id="money"> Money: {{ money }} </p>
+                <p id="bank_money"> Bank Money: {{ bank_money }} </p>
+                <p id="reputation"> SRP: {{ reputation }} </p>
+                <p id="driving_license"> Driving License: {{ license }} </p>
+                <p id="serial"> Serial: {{ serial }} </p>
+
+                <p id="skin"> Skin: {{ skin }} </p>
+                <p>QR AUTH CODE</p>
+                <img src="{{qr_code}}" id="qr_code"> 
+            </div>
+
+            
+            
+            
+        </body>
+
+    </html>

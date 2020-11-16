@@ -1,0 +1,89 @@
+body
+{
+    margin-top: 15rem;
+    align-self: center;
+    justify-content: center;
+    background-color: #252525;
+    color: #4de061;
+
+}
+
+#profileInfo
+{
+    margin-top: -7rem;
+    position: relative;
+    text-align: center;
+    border: 5px solid white;
+    width:43rem ;
+    height: 100%;
+    padding: 2rem; 
+    left: 34rem;
+    font-size: 2.4vh;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+       
+}
+
+a 
+{
+    text-decoration: none;
+    color: #4de061;
+    float: right;
+    position: relative;
+    bottom:13rem;
+    right: 3rem;
+    font-size: 2.2vh;
+}
+
+a:hover
+{
+    text-decoration: underline;
+
+}
+
+a.mtaLink
+{
+    float: left;
+    right: -10rem;
+    color: #4de061;
+    font-size: 3vh;
+
+}
+
+a.data
+{
+    text-align: center;
+    float: left;
+    position: relative;
+    left:33%;
+    color: white;
+    font-family: American Typewriter, serif;
+    font-size: 3vh;
+
+}
+
+a.data:hover
+{
+    text-decoration: none;
+    
+}
+hr
+{
+    position: relative;
+    top:-12rem;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+
+}
+
+.circle {
+    width:3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+    float: right;
+    bottom: 14rem;
+    right: 2rem;
+
+}

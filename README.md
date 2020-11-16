@@ -71,3 +71,9 @@ All "scripts" etc. belong to the owner (suri / xSuri). Signing them without the 
 
 ©Copyright 2020/2021 suri
 MTA Code and Site
+
+# Authors
+
+[suri](https://github.com/xSuri)
+
+[lLYNXl](https://github.com/lLYNXl)

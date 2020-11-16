@@ -1,7 +1,8 @@
 # MTA Code and Site
 # Requirements
 
-NodeJs
+[NodeJs](https://nodejs.org/en/)
+Any DB's
 
 Go to `/database` and import the basic local DB to your DB server. ( All files: `name_file.sql` ) - ``DB WEB``. Import [`/databases/SITE`](https://github.com/xSuri/mta_site/tree/main/databases/SITE)
 
@@ -39,6 +40,12 @@ Install all require liblary ( [`/install_lib`](https://github.com/xSuri/mta_site
 [Manual](https://github.com/xSuri/mta_site/tree/main/install_lib/Manual):
 
 ``` npm install _MODULES_ --save``` (click Manual to get all liblary names)
+
+rest info to db and any info in [basic_important_info.md](https://github.com/xSuri/mta_site/blob/main/basic_important_info.md)
+
+# Tested
+
+Program have commented lines to beta features. Admin Panel. Authenticator (he not commented change to user db [mta_web_users_accounts] authenticator_on to value 1)
 
 # Start
 

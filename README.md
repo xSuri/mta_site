@@ -39,7 +39,7 @@ Required Modules: kJLKDSLLDSAKJSLLKDSALKJDSLKJSDLALKJSDLKJSALKJDALKJSDLKJSADSALK
 
 # Start
 
-Go to [`/mta_code_site`](s)
+Go to [`/mta_code_server_and_site/site/`](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/site)
 
 And start command:
 

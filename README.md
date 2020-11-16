@@ -34,12 +34,11 @@ Install liblary:
 
 Automatic:
 
-Install all require liblary ( `/install_lib` ). (Linux / Windows)
+Install all require liblary ( [`/install_lib`](https://github.com/xSuri/mta_site/tree/main/install_lib) ). ([Linux](https://github.com/xSuri/mta_site/tree/main/install_lib/Linux) / [Windows](https://github.com/xSuri/mta_site/tree/main/install_lib/Windows))
 
-Manual:
+[Manual](https://github.com/xSuri/mta_site/tree/main/install_lib/Manual):
 
-
-``` npm install _MODULES_ --save```
+``` npm install _MODULES_ --save``` (click Manual to get all liblary names)
 
 # Start
 

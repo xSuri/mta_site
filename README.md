@@ -7,7 +7,11 @@ Go to [`/database`](https://gitAASAAAShub.com/xSuri/mta_site/tree/master/databas
 
 You must have your DB to mta game users - ``DB MTA``. Import [`/databases/GAME`](https://github.com/xSuri/mta_site/tree/main/databases/GAME)
 
-Write all your basic info to files:
+Write all your basic info to files: 
+
+[SITE](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/site)
+[GAME](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/server/mta_code_web_lua) (code_lua)
+
 ```
     mta_code_site:
 
@@ -20,7 +24,7 @@ Write all your basic info to files:
             passport-github
             passport-facebook
 
-    [mta_code_lua](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/server/mta_code_web_lua):
+    mta_code_lua:
     
         server.lua
 ```
@@ -33,7 +37,6 @@ Install all require liblary ( `/install_lib` ). (Linux / Windows)
 
 Manual:
 
-Required Modules: kJLKDSLLDSAKJSLLKDSALKJDSLKJSDLALKJSDLKJSALKJDALKJSDLKJSADSALKJDSALKJDSADSALKJLKJDSALKJ
 
 ``` npm install _MODULES_ --save```
 

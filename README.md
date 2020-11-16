@@ -76,4 +76,4 @@ MTA Code and Site
 
 [suri](https://github.com/xSuri)
 
-[lLYNXl](https://github.com/lLYNXl)
+[lLYNXl](https://github.com/lLYNXl) - css / frontend

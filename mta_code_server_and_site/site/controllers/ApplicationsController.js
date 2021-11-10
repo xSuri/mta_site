@@ -47,8 +47,8 @@ exports.newCode = (req,res) => {
 
                     found = "record found"
 
-                    var del = "DELETE FROM `mta_web_code` WHERE serial = "+"'"+`${req.body.serial}`+"'"; // Delete code if serial is found
-                    db1.db1.query(del, function (err, result) {
+                    var del = "DELETE FROM `mta_web_code` WHERE serial = ? "; // Delete code if serial is found
+                    db1.db1.query(del, [`${req.body.serial}`], function (err, result) {
                         if (err) throw err;
                     });
                 }
@@ -76,9 +76,9 @@ exports.newCode = (req,res) => {
                         serialNick = result2[x]["login"];
                         found = "yes";
     
-                        var sql4 = "INSERT INTO mta_web_code (id ,serial, code, nick, date) VALUES (NULL, "+"'"+req.body.serial+"'"+","+"'"+generatedCode+"'"+","+"'"+serialNick+"'"+","+" Now() )"; // Generate code in WEB DB
+                        var sql4 = "INSERT INTO mta_web_code (id ,serial, code, nick, date) VALUES (NULL, ?, ?, ?,"+" Now() )"; // Generate code in WEB DB
                         
-                        db1.db1.query(sql4, function (err, result) {
+                        db1.db1.query(sql4, [req.body.serial, generatedCode, serialNick], function (err, result) {
                             if (err) throw err;
     
                             var resultText = generatedCode;

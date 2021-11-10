@@ -69,8 +69,8 @@ exports.check = (req,res) => {
 
             else if ( x == result.length-1 && authId != reqUserId){ // If user dont match in DB (create)
 
-                var sql = "INSERT INTO `mta_web_users_accounts` (id , serial, authId, authed, date, authenticator_on, recovery_email) VALUES (NULL,"+"'"+"N/A"+"'"+","+"'"+req.user.id+"'"+", 0, NOW(), 0,"+"'"+req.user.emails[0].value+"')";
-                db1.db1.query(sql, function (err, result) {
+                var sql = "INSERT INTO `mta_web_users_accounts` (id , serial, authId, authed, date, authenticator_on, recovery_email) VALUES (NULL, N/A, ?, 0, NOW(), 0, ?)";
+                db1.db1.query(sql, [req.user.id, req.user.emails[0].value], function (err, result) {
                     if (err) throw err;
                 });
 
@@ -81,9 +81,9 @@ exports.check = (req,res) => {
 
                     var generatedAuthenticationCode = data
 
-                    var authenticationCode = "INSERT INTO mta_web_authenticator (id, qrcode, userId, date, secret_ascii) VALUES (NULL,"+"'"+generatedAuthenticationCode+"'"+","+"'"+req.user.id+"'"+", NOW(),"+"'"+secretAscii+"')";
+                    var authenticationCode = "INSERT INTO mta_web_authenticator (id, qrcode, userId, date, secret_ascii) VALUES (NULL, ?, ?, NOW(), ?)";
                 
-                    db1.db1.query(authenticationCode, function (err, result) {
+                    db1.db1.query(authenticationCode, [generatedAuthenticationCode,req.user.id, secretAscii], function (err, result) {
                         if (err) throw err;
                     });
                 })
@@ -141,9 +141,9 @@ exports.check = (req,res) => {
                             
                                                 var generatedAuthenticationCode = data
                             
-                                                var authenticationCode = "UPDATE mta_web_administrations SET qrcode = "+"'"+generatedAuthenticationCode+"'"+", secret_ascii= "+"'"+secretAscii+"'"+"  WHERE userId = "+"'"+req.user.id+"'"
+                                                var authenticationCode = "UPDATE mta_web_administrations SET qrcode = ?, secret_ascii= ?  WHERE userId = ?";
                                             
-                                                db1.db1.query(authenticationCode, function (err, result) {
+                                                db1.db1.query(authenticationCode, [generatedAuthenticationCode, secretAscii, req.user.id], function (err, result) {
                                                     if (err) throw err;
                                                 });
 
@@ -429,7 +429,7 @@ exports.profile = (req,res) => {
                                     var reqUserId = req.user.id
 
                                     if ( authId == reqUserId ){
-                                        db1.db1.query("SELECT * FROM `mta_web_authenticator` WHERE userId="+"'"+authId+"'", function (err, result){
+                                        db1.db1.query("SELECT * FROM `mta_web_authenticator` WHERE userId=?", [authId], function (err, result){
                                             if(err) throw err;
 
                                             for ( var x=0; x != result.length; x++ ){
@@ -446,7 +446,7 @@ exports.profile = (req,res) => {
 
                                                     if(authOn == "1"){ // If user have authenticator
 
-                                                        db1.db1.query("SELECT * FROM `mta_web_administrations` WHERE userId="+"'"+userId+"'", function (err, result){
+                                                        db1.db1.query("SELECT * FROM `mta_web_administrations` WHERE userId=?", [userId], function (err, result){
                                                             if (err) throw err;
 
                                                             var rank = result[0]["rank"]

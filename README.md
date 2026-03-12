@@ -1,80 +1,56 @@
-# MTA Code and Site
+# MTA:SA Server & Web Integration Suite
 
-# Basic work
+Kompleksowy system integracji serwera MTA:SA z panelem webowym. Projekt umożliwia zaawansowaną synchronizację kont graczy, autoryzację OAuth oraz zdalne zarządzanie serwerem gry z poziomu przeglądarki.
 
-Watch film:
+### 📺 Prezentacja wideo / Video Demo
+https://youtu.be/GWm5nIZRac4
 
-[![Watch the video](https://img.youtube.com/vi/GWm5nIZRac4/maxresdefault.jpg)](https://youtu.be/GWm5nIZRac4)
+---
 
+## 🛠 Funkcjonalności / Features
+* Multi-Database Sync: Synchronizacja danych między bazą strony (DB WEB) a bazą kont gry (DB MTA).
+* OAuth Integration: Logowanie przez Google, GitHub, Facebook oraz YouTube za pomocą Passport.js.
+* Admin Panel: Moduł zarządzania infrastrukturą serwera (faza beta).
+* Two-Factor Authentication: Implementacja systemu autoryzacji (2FA).
 
-# Requirements
+---
 
-[NodeJs](https://nodejs.org/en/)
+## 🚀 Konfiguracja i Instalacja / Setup
 
-Any DB's
+### 1. Wymagania / Requirements
+* Node.js
+* Serwer MySQL / MariaDB
 
-Go to `/database` and import the basic local DB to your DB server. ( All files: `name_file.sql` ) - ``DB WEB``. Import [`/databases/SITE`](https://github.com/xSuri/mta_site/tree/main/databases/SITE)
+### 2. Baza danych / Database
+Zaimportuj schematy SQL znajdujące się w katalogu /database:
+* Web Interface: Importuj pliki z /databases/SITE do bazy strony.
+* Game Server: Importuj pliki z /databases/GAME do bazy serwera MTA.
 
-You must have your DB to mta game users - ``DB MTA``. Import [`/databases/GAME`](https://github.com/xSuri/mta_site/tree/main/databases/GAME)
+### 3. Konfiguracja połączeń / Configuration
+Zaktualizuj dane w plikach:
+* Web: /mta_code_server_and_site/site/ (baza danych i klucze API OAuth).
+* Game: /mta_code_server_and_site/server/mta_code_web_lua/server.lua.
 
-Write all your basic info to files: 
+### 4. Instalacja bibliotek / Installation
+Skorzystaj ze skryptów w /install_lib lub wykonaj ręcznie:
+npm install
 
-[SITE](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/site)
+---
 
-[GAME](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/server/mta_code_web_lua) (code_lua)
+## 🚦 Uruchomienie / Getting Started
+Przejdź do katalogu strony i uruchom serwer Node.js:
 
-```
-    site:
+cd mta_code_server_and_site/site
+node server.js
 
-        databases:
-            db1 / db2
+*Możesz również użyć "nodemon server.js" dla trybu deweloperskiego.*
 
-        passports:
-            passport-google
-            passport-youtube3
-            passport-github
-            passport-facebook
+---
 
-    mta_code_web_lua:
-    
-        server.lua
-```
+## 📄 Autorzy i Licencja / Authors & License
+* Project Lead & Backend: https://github.com/xSuri
+* Frontend & UI/UX: https://github.com/lLYNXl
 
-Install liblary:
+Legal Note: Projekt udostępniony do darmowego użytku i modyfikacji. Wymagane jest zachowanie informacji o autorze. Projekt ma charakter rozwojowy (R&D) – autor nie odpowiada za ewentualne błędy.
 
-Automatic:
-
-Install all require liblary ( [`/install_lib`](https://github.com/xSuri/mta_site/tree/main/install_lib) ). ([Linux](https://github.com/xSuri/mta_site/tree/main/install_lib/Linux) / [Windows](https://github.com/xSuri/mta_site/tree/main/install_lib/Windows))
-
-[Manual](https://github.com/xSuri/mta_site/tree/main/install_lib/Manual):
-
-``` npm install _MODULES_ --save``` (click Manual to get all liblary names)
-
-rest info to db and any info in [basic_important_info.md](https://github.com/xSuri/mta_site/blob/main/basic_important_info.md)
-
-# Tested
-
-Program have commented lines to beta features. Admin Panel. Authenticator (he not commented change to user db [mta_web_users_accounts] authenticator_on to value 1)
-
-# Start
-
-Go to [`/mta_code_server_and_site/site/`](https://github.com/xSuri/mta_site/tree/main/mta_code_server_and_site/site)
-
-And start command:
-
-``` "node server.js" OR "nodemon server.js" ```
-
-# Info
-I am constantly improving my own skills and so far I do not share my projects very much, I am aware of many possible errors.
-
-
-All "scripts" etc. belong to the owner (suri / xSuri). Signing them without the consent of the owner is prohibited. You can modify, download them and you have to give their rightful creator. All my projects arose suddenly and I am warning you that I am learning, among others. this language. All my designs are free and you can use them freely. Any errors or suggestions can be directed to the owner (i.e. me). Have a nice use of C:
-
-©Copyright 2020/2021 suri
-MTA Code and Site
-
-# Authors
-
-[suri](https://github.com/xSuri)
-
-[lLYNXl](https://github.com/lLYNXl) - css / frontend
+© 2020-2021 xSuri

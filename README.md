@@ -51,6 +51,6 @@ node server.js
 * Project Lead & Backend: https://github.com/xSuri
 * Frontend & UI/UX: https://github.com/lLYNXl
 
-Legal Note: Projekt udostępniony do darmowego użytku i modyfikacji. Wymagane jest zachowanie informacji o autorze. Projekt ma charakter rozwojowy (R&D) – autor nie odpowiada za ewentualne błędy.
+Legal Note: Projekt udostępniony do darmowego użytku i modyfikacji. Wymagane jest zachowanie informacji o autorze. Projekt ma charakter rozwojowy (R&D) - autor nie odpowiada za ewentualne błędy.
 
 © 2020-2021 xSuri
